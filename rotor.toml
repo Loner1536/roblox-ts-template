@@ -1,0 +1,8 @@
+[assets]
+mode = "macro"
+base = "assets/images"
+paths = ["assets/images/**/*.png", "assets/images/**/*.jpg"]
+
+[assets.creator]
+type = "user"
+id = 0

@@ -1,0 +1,44 @@
+{
+    "name": "roblox-ts-template",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "build": "rojo build --output place.rbxlx",
+        "compile": "rotor build",
+        "dev": "rotor dev",
+        "assets": "rotor asset sync",
+        "lint": "eslint src",
+        "format": "prettier --write src"
+    },
+    "trustedDependencies": ["@rotor-rbx/rotor"],
+    "devDependencies": {
+        "@rbxts/compiler-types": "^3.0.0-types.0",
+        "@rbxts/types": "^1.0.939",
+        "@rbxts/ui-labs": "^2.4.2",
+        "@rotor-rbx/rotor": "latest",
+        "@types/node": "^26.1.1",
+        "@typescript-eslint/eslint-plugin": "^8.0.0",
+        "@typescript-eslint/parser": "^8.0.0",
+        "eslint": "^9.0.0",
+        "eslint-plugin-roblox-ts": "^1.4.0",
+        "prettier": "^3.0.0",
+        "rbxts-transformer-flamework": "^1.0.0",
+        "typescript": "5.5.3"
+    },
+    "dependencies": {
+        "@flamework/core": "^1.0.0",
+        "@rbxts/charm": "^0.11.0",
+        "@rbxts/jabby": "^0.5.1",
+        "@rbxts/jecs": "^0.11.0",
+        "@rbxts/konsole": "github:Loner1536/Konsole#main",
+        "@rbxts/lync": "github:Axp3cter/Lync#main",
+        "@rbxts/lync-utility": "github:Loner1536/LyncUtility#main",
+        "@rbxts/lyra": "^0.6.1",
+        "@rbxts/planck": "^1.0.0",
+        "@rbxts/planck-jabby": "^1.0.0",
+        "@rbxts/replecs": "^0.3.1",
+        "@rbxts/services": "^1.6.0",
+        "@rbxts/t": "^3.1.1",
+        "@rbxts/vide": "^0.6.1"
+    }
+}

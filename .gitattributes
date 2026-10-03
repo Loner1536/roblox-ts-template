@@ -1,0 +1,3 @@
+# Only count source files in GitHub language statistics.
+* linguist-vendored
+src/** linguist-vendored=false

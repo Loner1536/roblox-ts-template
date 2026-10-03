@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "downlevelIteration": true,
+        "jsx": "react",
+        "jsxFactory": "Vide.jsx",
+        "jsxFragmentFactory": "Vide.Fragment",
+        "module": "commonjs",
+        "moduleResolution": "Node",
+        "moduleDetection": "force",
+        "noLib": true,
+        "experimentalDecorators": true,
+        "strict": true,
+        "target": "ESNext",
+        "typeRoots": ["node_modules/@rbxts", "node_modules/@flamework"],
+        "rootDir": "src",
+        "outDir": "out",
+        "incremental": true,
+        "baseUrl": "src",
+        "paths": { "@shared/*": ["shared/*"], "@server/*": ["server/*"], "@client/*": ["client/*"] },
+        "plugins": [{ "transform": "rbxts-transformer-flamework" }]
+    },
+    "include": ["src", "rotor.d.ts"]
+}

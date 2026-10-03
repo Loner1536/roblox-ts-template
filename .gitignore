@@ -1,0 +1,15 @@
+node_modules/
+out/
+include/
+*.tsbuildinfo
+rotor.d.ts
+flamework.build
+sourcemap.json
+/*.rbxl
+/*.rbxlx
+/*.rbxlx.lock
+.rokit/
+.DS_Store
+.env*
+.nimbalyst/
+.serena/
