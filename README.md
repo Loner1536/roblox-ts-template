@@ -23,9 +23,11 @@ This repository intentionally contains no game systems. The only ECS component p
 - `src/shared/api/player`: player profile template, validation schema, and migrations.
 - `src/shared/stores`: reactive state replicated to clients.
 
-## Player data example
+## Player data
 
-`PlayerService` loads a Lyra profile when a player joins, records `firstJoinedAt` once, creates an ECS entity, and assigns the replicated `Player.UserId` component. When the player leaves, it deletes the entity and unloads the profile.
+`PlayerService` loads an empty Lyra profile when a player joins, creates an ECS entity, and assigns the replicated `Player.UserId` component. When the player leaves, it deletes the entity and unloads the profile.
+
+The profile type, template, schema, codec, and migration list are deliberately empty. They provide the wiring without making assumptions about your game's data.
 
 Add a field in four places:
 

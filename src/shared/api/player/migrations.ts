@@ -1,8 +1,5 @@
-import { MigrationStep } from "@rbxts/lyra";
+import type { TMigrationStep } from "@rbxts/lyra";
 
-interface LegacyProfile { coins: number; firstJoinedAt?: number }
+const Migrations: TMigrationStep<object, object>[] = [];
 
-export default [MigrationStep.transform<LegacyProfile, Types.Player.Profile>("add-first-joined-at", (profile) => ({
-    coins: profile.coins,
-    firstJoinedAt: profile.firstJoinedAt ?? 0,
-}))];
+export default Migrations;

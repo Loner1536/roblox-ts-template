@@ -18,8 +18,7 @@ export default class PlayerService implements OnInit {
     public updateProfile(player: Player, transform: (profile: Types.Player.Profile) => boolean): boolean { return this.store.update(player, transform); }
     public getEntity(player: Player): Entity | undefined { return this.entities.get(player); }
     private add(player: Player): void {
-        const profile = this.store.load(player);
-        if (profile.firstJoinedAt === 0) this.store.update(player, (data) => { data.firstJoinedAt = DateTime.now().UnixTimestamp; return true; });
+        this.store.load(player);
         const entity = ECS.W.entity(); ECS.W.set(entity, ECS.C.Player.UserId, player.UserId);
         ECS.Replicator.server.set_networked(entity); ECS.Replicator.server.set_reliable(entity, ECS.C.Player.UserId);
         this.entities.set(player, entity);
